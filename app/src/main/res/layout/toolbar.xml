@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:background="#41b2e2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+       <LinearLayout
+           android:gravity="right"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <LinearLayout
+
+               android:layout_width="match_parent"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:gravity="left">
+
+               <ImageView
+                   android:layout_width="48dp"
+                   android:layout_marginRight="28dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/basket"/>
+
+               <ImageView
+                   android:layout_width="48dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/search"
+                   />
+           </LinearLayout>
+           <ImageView
+               android:layout_width="140dp"
+               android:layout_height="wrap_content"
+               android:src="@drawable/logo"
+               android:scaleType="fitCenter"
+               android:layout_marginRight="25dp"/>
+           <ImageView
+               android:id="@+id/hambergurMenu"
+               android:layout_width="40dp"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="20dp"
+               android:scaleType="fitCenter"
+               android:src="@drawable/menu"/>
+
+
+       </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>

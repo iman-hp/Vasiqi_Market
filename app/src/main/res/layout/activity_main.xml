@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vasiqimarket.www.MainActivity"
+    android:paddingBottom="16dp"
+    android:background="#dedcdc"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#2e982a"
+            android:id="@+id/linearShoeAllProduct"
+            android:padding="4dp"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="مشاهده لیست دسته بندی محصولات"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+           <LinearLayout
+               
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="16dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txthour"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="12"
+                       android:padding="6dp"
+                       android:textColor="#ffffff"
+                       android:background="@drawable/timer"
+                       android:textSize="22sp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=":"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginRight="2dp"
+                       android:textSize="22sp"/>
+
+                   <TextView
+                       android:id="@+id/txtmin"
+                       android:background="@drawable/timer"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="34"
+                       android:textColor="#ffffff"
+                       android:padding="6dp"
+                       android:textSize="22sp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=":"
+                       android:textSize="22sp"
+                       android:layout_marginLeft="2dp"
+                       android:layout_marginRight="2dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/txtsecond"
+                       android:padding="6dp"
+                       android:textColor="#ffffff"
+                       android:background="@drawable/timer"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="23"
+                       android:textSize="22sp"/>
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="0.5"
+                   android:gravity="right"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/textView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="4dp"
+                       android:text="شگفت انگیز"
+                       android:textColor="#ff0202"
+                       android:textSize="22sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="پیشنهاد"
+                       android:textColor="#242121"
+                       android:textSize="22sp" />
+
+
+               </LinearLayout>
+               
+
+           
+           </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layoutDirection="rtl">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/khiarshoor"
+                            android:layout_marginBottom="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="خیارشور ترقی"
+                            android:layout_marginBottom="4dp"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6750"
+                            android:textColor="#0bc607"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8000"
+                            android:textColor="#fbf20004"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:layout_marginBottom="16dp"
+                            android:src="@drawable/rob" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رب چین چین"
+                            android:layout_marginBottom="4dp"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3800"
+                            android:textColor="#05ff00"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4500"
+                            android:textColor="#ff0004"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/nooshabeh"
+                            android:layout_marginBottom="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نوشابه کوکاکولا"
+                            android:layout_marginBottom="4dp"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2200"
+                            android:textColor="#10d40c"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2800"
+                            android:textColor="#ff0000"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/sos"
+                            android:layout_marginBottom="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سس مایونز مهرام"
+                            android:layout_marginBottom="4dp"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6100"
+                            android:textColor="#04e200"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7600"
+                            android:textColor="#ff0000"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/macaroni"
+                            android:layout_marginBottom="16dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ماکارونی مک"
+                            android:layout_marginBottom="4dp"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3500"
+                            android:textColor="#05be01"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4200"
+                            android:textColor="#d70303"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            
+
+            
+            
+        </HorizontalScrollView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لیست کامل"
+                android:textColor="#076bc3"
+                android:layout_marginLeft="16dp"
+                android:textSize="18sp" />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:textColor="#343232"
+                android:layout_height="wrap_content"
+                android:text="فقط در مارکت وثیقی"
+                android:textSize="20sp"
+               />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layoutDirection="rtl">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                     <LinearLayout
+                          android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                          android:orientation="horizontal">
+
+                         <LinearLayout
+                        android:layout_width="150dp"
+                             android:layout_marginRight="8dp"
+                             android:layout_marginLeft="8dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/parjac"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شامپو گردو پرژک"
+                            android:textColor="#2f2f2f"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#2f2f2f"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2600"
+                            android:textColor="#faff0714"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2400"
+                            android:textColor="#0787ff"/>
+
+                    </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="150dp"
+                             android:layout_marginRight="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             android:gravity="center">
+                             <ImageView
+                                 android:layout_width="150dp"
+                                 android:layout_height="160dp"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/shir"/>
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="شیر کم چرب دامداران"
+                                 android:textColor="#2f2f2f"/>
+                             <ImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="1dp"
+                                 android:background="#2f2f2f"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2600"
+                                 android:textColor="#faff0714"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2400"
+                                 android:textColor="#0787ff"/>
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="150dp"
+                             android:layout_marginRight="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             android:gravity="center">
+                             <ImageView
+                                 android:layout_width="150dp"
+                                 android:layout_height="160dp"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/kare"/>
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="کره"
+                                 android:textColor="#2f2f2f"/>
+                             <ImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="1dp"
+                                 android:background="#2f2f2f"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2600"
+                                 android:textColor="#faff0714"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2400"
+                                 android:textColor="#0787ff"/>
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="150dp"
+                             android:layout_marginRight="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             android:gravity="center">
+                             <ImageView
+                                 android:layout_width="150dp"
+                                 android:layout_height="160dp"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/mast"/>
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="ماست بونانی"
+                                 android:textColor="#2f2f2f"/>
+                             <ImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="1dp"
+                                 android:background="#2f2f2f"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2600"
+                                 android:textColor="#faff0714"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2400"
+                                 android:textColor="#0787ff"/>
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_marginRight="8dp"
+                             android:layout_marginLeft="8dp"
+                             android:layout_width="150dp"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             android:gravity="center">
+                             <ImageView
+                                 android:layout_width="150dp"
+                                 android:layout_height="160dp"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/panir_mas"/>
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="پنیر ماسکارپونه"
+                                 android:textColor="#2f2f2f"/>
+                             <ImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="1dp"
+                                 android:background="#2f2f2f"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2600"
+                                 android:textColor="#faff0714"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2400"
+                                 android:textColor="#0787ff"/>
+
+                         </LinearLayout>
+                     </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/bayodent"
+                    android:scaleType="centerCrop"/>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+       <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/poodr_baner"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/proteiin"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    
+    
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/golrang_baner"
+                    android:scaleType="centerCrop"/>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="لیست کامل"
+                    android:textColor="#076bc3"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="#343232"
+                    android:layout_height="wrap_content"
+                    android:text="پرفروش ترین ها"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layoutDirection="rtl">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/parjac"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="شامپو گردو پرژک"
+                                android:textColor="#2f2f2f"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#2f2f2f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2600"
+                                android:textColor="#faff0714"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2400"
+                                android:textColor="#0787ff"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/shir"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="شیر کم چرب دامداران"
+                                android:textColor="#2f2f2f"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#2f2f2f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2600"
+                                android:textColor="#faff0714"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2400"
+                                android:textColor="#0787ff"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/kare"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="کره"
+                                android:textColor="#2f2f2f"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#2f2f2f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2600"
+                                android:textColor="#faff0714"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2400"
+                                android:textColor="#0787ff"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mast"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ماست بونانی"
+                                android:textColor="#2f2f2f"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#2f2f2f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2600"
+                                android:textColor="#faff0714"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2400"
+                                android:textColor="#0787ff"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="160dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/panir_mas"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="پنیر ماسکارپونه"
+                                android:textColor="#2f2f2f"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#2f2f2f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2600"
+                                android:textColor="#faff0714"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2400"
+                                android:textColor="#0787ff"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+      </LinearLayout>
+
+   </ScrollView>
+    <include layout="@layout/toolbar"/>
+</LinearLayout>

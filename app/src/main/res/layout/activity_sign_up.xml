@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="برای عضویت در مارکت وثیقی آدرس ایمیل و کلمه ی عبور خود را وارد کنید"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/smallemail"
+                android:hint="پست الکترونکی" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textPassword"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/smalllock"
+                android:hint="گذرواژه" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtrePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:inputType="textPassword"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/smalllock"
+                android:hint=" تکرار گذرواژه" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#03c85c">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flash"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عضویت در مارکت وثیقی"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
